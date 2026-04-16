@@ -65,6 +65,8 @@ Context/
 Migrations/
  20260413193214_Initial.cs
  20260413193214_Initial.Designer.cs
+ 20260416202356_FixPriceDecimalType.cs
+ 20260416202356_FixPriceDecimalType.Designer.cs
  AppDbContextModelSnapshot.cs
 obj/Debug/net9.0/
  .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
