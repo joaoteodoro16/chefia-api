@@ -19,7 +19,7 @@ public class UpdateProductUsecase : IUpdateProductUsecase
         _currentUserService = currentUserService;
     }
 
-    public async Task<Result<UpdateProductResponse>> Execute(UpdateProductRequest request)
+    public async Task<Result<UpdateProductResponse>> ExecuteAsync(UpdateProductRequest request)
     {
         var product = await _repository.GetByIdAsync(request.Id);
 

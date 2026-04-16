@@ -21,6 +21,7 @@ using Chefia.Infra.Services.Session;
 using Chefia.App.Services;
 using Chefia.App.Usecases.Product.Create;
 using Chefia.App.Usecases.ProductCategory.Create;
+using Chefia.App.Usecases.Product.Update;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -54,7 +55,7 @@ builder.Services.AddScoped<IUpdateUserUsecase, UpdateUserUsecase>();
 //Product
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICreateProductUsecase, CreateProductUsecase>();
-
+builder.Services.AddScoped<IUpdateProductUsecase, UpdateProductUsecase>();
 //Product Category
 builder.Services.AddScoped<IProductCategoryRepository, ProductCategoryRepository>();
 builder.Services.AddScoped<ICreateProductCategoryUsecase, CreateProductCategoryUsecase>();

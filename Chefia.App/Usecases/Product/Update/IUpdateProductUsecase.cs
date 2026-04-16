@@ -6,5 +6,5 @@ namespace Chefia.App.Usecases.Product.Update;
 
 public interface IUpdateProductUsecase
 {
-    public Task<Result<UpdateProductResponse>> Execute(UpdateProductRequest request);
+    public Task<Result<UpdateProductResponse>> ExecuteAsync(UpdateProductRequest request);
 }
