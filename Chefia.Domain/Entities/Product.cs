@@ -13,6 +13,7 @@ public class Product : BaseEntity
     public Guid? ProductCategoryId { get; private set; }
     public ProductCategory? ProductCategory { get; private set; }
 
+    protected Product() { }
 
     public Product(string name, decimal price, string? description, bool fractional, Guid companyId, bool isAditional, Guid? productCategoryId = null)
     {
