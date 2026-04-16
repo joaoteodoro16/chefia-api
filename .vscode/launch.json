@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Launch API",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/Chefia.Api/bin/Debug/net9.0/Chefia.Api.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Chefia.Api",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  ]
+}

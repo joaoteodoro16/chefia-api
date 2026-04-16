@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Chefia.Api/Chefia.Api.csproj" />
+  <Project Path="Chefia.App/Chefia.App.csproj" />
+  <Project Path="Chefia.Domain/Chefia.Domain.csproj" />
+  <Project Path="Chefia.Infra/Chefia.Infra.csproj" />
+</Solution>
