@@ -26,4 +26,11 @@ public class Messages
     public const string ProductCreated = "Produto criado com sucesso.";
     public const string ProductUpdated = "Produto atualizado com sucesso.";
     #endregion
+
+    #region ProductCategory
+    public const string ProductCategoryNotFound = "Categoria de produto não encontrada.";
+    public const string ProductCategoryAlreadyExists = "Já existe uma categoria de produto com o mesmo nome.";
+    public const string ProductCategoryCreated = "Categoria de produto criada com sucesso.";
+    public const string ProductCategoryUpdated = "Categoria de produto atualizada com sucesso.";
+    #endregion
 }

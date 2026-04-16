@@ -71,6 +71,9 @@ Dtos/Product/Response/
  CreateProductResponse.cs
  FetchProductsResponse.cs
  UpdateProductResponse.cs
+Dtos/ProductCategory/
+ Request/CreateProductCategoryRequest.cs
+ Response/CreateProductCategoryResponse.cs
 Dtos/Result/
  ErrorCode.cs
  Result.cs
@@ -84,6 +87,7 @@ Dtos/User/Response/
  UserAuthResponse.cs
 Mappings/
  CompanyMapping.cs
+ ProductCategoryMapping.cs
  ProductMapping.cs
  UserMapping.cs
 obj/Debug/net9.0/
@@ -109,6 +113,9 @@ Usecases/Product/Fetch/
 Usecases/Product/Update/
  IUpdateProductUsecase.cs
  UpdateProductUsecase.cs
+Usecases/ProductCategory/Create/
+ CreateProductCategoryUsecase.cs
+ ICreateProductCategoryUsecase.cs
 Usecases/User/Auth/
  IUserAuthUsecase.cs
  UserAuthUsecase.cs
