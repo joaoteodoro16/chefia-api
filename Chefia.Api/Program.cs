@@ -67,6 +67,14 @@ builder.Services.AddScoped<ICreateProductCategoryUsecase, CreateProductCategoryU
 builder.Services.AddScoped<IFetchProductCategoriesUsecase, FetchProductCategoriesUsecase>();
 builder.Services.AddScoped<IUpdateProductCategoryUsecase, UpdateProductCategory>();
 
+//Table
+builder.Services.AddScoped<ITableRepository, TableRepository>();
+
+
+
+
+
+
 // JWT Settings
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt")); // ← linha adicionada
 

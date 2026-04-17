@@ -77,6 +77,7 @@ Repositories/
  ProductCategoryRepository.cs
  ProductRepository.cs
  Repository.cs
+ TableRepository.cs
  UserRepository.cs
 Seedings/ConfigurationSeeding.cs
 Services/Security/
