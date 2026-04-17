@@ -24,6 +24,7 @@ using Chefia.App.Usecases.ProductCategory.Create;
 using Chefia.App.Usecases.Product.Update;
 using Chefia.App.Usecases.Product.Fetch;
 using Chefia.App.Usecases.ProductCategory.Fetch;
+using Chefia.App.Usecases.ProductCategory.Update;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -64,6 +65,7 @@ builder.Services.AddScoped<IFetchProductsUsecase, FetchProductsUsecase>();
 builder.Services.AddScoped<IProductCategoryRepository, ProductCategoryRepository>();
 builder.Services.AddScoped<ICreateProductCategoryUsecase, CreateProductCategoryUsecase>();
 builder.Services.AddScoped<IFetchProductCategoriesUsecase, FetchProductCategoriesUsecase>();
+builder.Services.AddScoped<IUpdateProductCategoryUsecase, UpdateProductCategory>();
 
 // JWT Settings
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt")); // ← linha adicionada
