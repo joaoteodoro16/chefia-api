@@ -58,8 +58,11 @@ TemporaryDependencyNodeTargetIdentifier=net9.0
 Entities/
  BaseEntity.cs
  Company.cs
+ Order.cs
+ OrderItem.cs
  Product.cs
  ProductCategory.cs
+ Tab.cs
  Table.cs
  User.cs
 Enums/OperatorRole.cs
@@ -69,10 +72,13 @@ obj/Debug/net9.0/
  Chefia.Domain.GlobalUsings.g.cs
 Repositories/
  ICompanyRepository.cs
+ IOrderItemRepository.cs
+ IOrderRepository.cs
  IProductCategoryRepository.cs
  IProductRepository.cs
  IRepository.cs
  ITableRepository.cs
+ ITabRepository.cs
  IUserRepository.cs
 Services/Security/
  IJwtTokenService.cs

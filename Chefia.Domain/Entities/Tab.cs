@@ -1,26 +1,28 @@
 namespace Chefia.Domain.Entities;
 
-public class Table : BaseEntity
+//Semelhante a Comanda
+public class Tab : BaseEntity
 {
     public int Number { get; private set; }
     public string? Description { get; private set; }
     public bool IsActive { get; private set; }
     public Guid CompanyId { get; private set; }
+    public Guid TableId { get; private set; }
     public bool IsOpen { get; private set; }
     private readonly List<Order> _orders = new();
     public IReadOnlyCollection<Order> Orders => _orders;
-    private readonly List<Tab> _tabs = new();
-    public IReadOnlyCollection<Tab> Tabs => _tabs;
     public Company Company { get; private set; } = null!;
+    public Table Table { get; private set; } = null!;
 
-    protected Table() { }
 
-    public Table(int number, string? description, Guid companyId)
+    protected Tab() { }
+    public Tab(int number, string? description, Guid companyId, Guid tableId)
     {
         SetNumber(number);
         SetDescription(description);
         SetIsActive(true);
         CompanyId = companyId;
+        TableId = tableId;
         Open();
     }
 
@@ -38,6 +40,7 @@ public class Table : BaseEntity
     {
         IsActive = isActive;
     }
+
     public void Open()
     {
         IsOpen = true;
@@ -51,18 +54,7 @@ public class Table : BaseEntity
     public void AddOrder(Order order)
     {
         if (!IsOpen)
-            throw new InvalidOperationException("A mesa está fechada. Não é possível adicionar pedidos.");
-
-        if (Tabs.Count > 0)
-            throw new InvalidOperationException("A mesa possui comandas ativas. Não é possível adicionar pedidos diretamente à mesa.");
-
+            throw new InvalidOperationException("A comanda está fechada. Não é possível adicionar pedidos.");
         _orders.Add(order);
-    }
-
-    public void AddTab(Tab tab)
-    {
-        if (!IsOpen)
-            throw new InvalidOperationException("A mesa está fechada. Não é possível adicionar comandas.");
-        _tabs.Add(tab);
     }
 }

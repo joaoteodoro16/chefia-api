@@ -59,14 +59,20 @@ Context/
  AppDbContext.cs
  ContextMapping/
   CompanyCM.cs
+  OrderCM.cs
+  OrderRepository.cs
   ProductCategoryCM.cs
   ProductCM.cs
+  TabCM.cs
+  TableCM.cs
   UserCM.cs
 Migrations/
  20260413193214_Initial.cs
  20260413193214_Initial.Designer.cs
  20260416202356_FixPriceDecimalType.cs
  20260416202356_FixPriceDecimalType.Designer.cs
+ 20260417170405_CreateOrderEntitiesRelations.cs
+ 20260417170405_CreateOrderEntitiesRelations.Designer.cs
  AppDbContextModelSnapshot.cs
 obj/Debug/net9.0/
  .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
@@ -74,10 +80,13 @@ obj/Debug/net9.0/
  Chefia.Infra.GlobalUsings.g.cs
 Repositories/
  CompanyRepository.cs
+ OrderItemRepository.cs
+ OrderRepository.cs
  ProductCategoryRepository.cs
  ProductRepository.cs
  Repository.cs
  TableRepository.cs
+ TabRepository.cs
  UserRepository.cs
 Seedings/ConfigurationSeeding.cs
 Services/Security/

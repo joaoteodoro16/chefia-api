@@ -11,6 +11,10 @@ public class Company : BaseEntity
     public List<User> Users { get; private set; } = new List<User>();
     public List<Product> Products { get; private set; } = new List<Product>();
     public List<ProductCategory> ProductCategories { get; private set; } = new List<ProductCategory>();
+    public List<Table> Tables { get; private set; } = new List<Table>();
+    public List<Tab> Tabs { get; private set; } = new List<Tab>();
+    public List<Order> Orders { get; private set; } = new List<Order>();
+    public List<OrderItem> OrderItems { get; private set; } = new List<OrderItem>();
 
 
     public Company() { }
