@@ -73,7 +73,9 @@ Dtos/Product/Response/
  UpdateProductResponse.cs
 Dtos/ProductCategory/
  Request/CreateProductCategoryRequest.cs
- Response/CreateProductCategoryResponse.cs
+ Response/
+  CreateProductCategoryResponse.cs
+  FetchProductCategoriesResponse.cs
 Dtos/Result/
  ErrorCode.cs
  Result.cs
@@ -116,6 +118,9 @@ Usecases/Product/Update/
 Usecases/ProductCategory/Create/
  CreateProductCategoryUsecase.cs
  ICreateProductCategoryUsecase.cs
+Usecases/ProductCategory/Fetch/
+ FetchProductCategoriesUsecase.cs
+ IFetchProductCategoriesUsecase.cs
 Usecases/User/Auth/
  IUserAuthUsecase.cs
  UserAuthUsecase.cs
