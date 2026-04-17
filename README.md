@@ -1,5 +1,5 @@
 # chefia
-(EM DESENVOLVIMENTO) Projeto de Comanda Digital que estou criando para estudar criação de Apis com C# e criação de Apps com Flutter
+(IN DEVELOPMENT) Digital Tab project I am building to study API development with C# and app development with Flutter
 
 
 dotnet ef migrations add InitialCreate --project Chefia.Infra --startup-project Chefia.Api
