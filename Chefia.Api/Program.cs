@@ -71,10 +71,6 @@ builder.Services.AddScoped<IUpdateProductCategoryUsecase, UpdateProductCategory>
 builder.Services.AddScoped<ITableRepository, TableRepository>();
 
 
-
-
-
-
 // JWT Settings
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt")); // ← linha adicionada
 
@@ -105,6 +101,16 @@ builder.Services.AddAuthorization(options =>
     options.FallbackPolicy = new AuthorizationPolicyBuilder()
         .RequireAuthenticatedUser()
         .Build();
+});
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
 });
 
 builder.Services.AddOpenApi();
